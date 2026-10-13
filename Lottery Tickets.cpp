@@ -9,8 +9,8 @@ using namespace std;
 int main()
 {
     std::cout << "Lottery Tickets Generator\n";
-    random_device engine;
-    uniform_int_distribution<int> randomNumber(1, 9);
+	random_device engine; // Create a random number generator engine
+	uniform_int_distribution<int> randomNumber(1, 9); // Generate random numbers between 1 and 9
 
     int randomNumber1 = randomNumber(engine);
     int randomNumber2 = randomNumber(engine);
