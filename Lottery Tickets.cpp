@@ -19,9 +19,7 @@ int main()
     int randomNumber5 = randomNumber(engine);
     int randomNumber6 = randomNumber(engine);
 
-    std::basic_string<char> ticket = std::basic_string<char>(1, '0' + randomNumber1) + " " + std::basic_string<char>(1, '0' + randomNumber2) + " " + std::basic_string<char>(1, '0' + randomNumber3) + " " + std::basic_string<char>(1, '0' + randomNumber4) + " " + std::basic_string<char>(1, '0' + randomNumber5) + " " + std::basic_string<char>(1, '0' + randomNumber6);
-    int ticketNumber = randomNumber1 + randomNumber2 + randomNumber3 + randomNumber4 + randomNumber5 + randomNumber6;
-
+	std::_String_iterator ticket = std::to_string(randomNumber1) + std::to_string(randomNumber2) + std::to_string(randomNumber3) + std::to_string(randomNumber4) + std::to_string(randomNumber5) + std::to_string(randomNumber6);
     std::cout << ticket << std::endl;
     std::cout << "Ticket Number: " << ticketNumber << std::endl;
     return 0;
