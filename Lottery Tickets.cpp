@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <random>
+#include <string>
 using namespace std;
 
 int main()
@@ -19,7 +20,7 @@ int main()
     int randomNumber5 = randomNumber(engine);
     int randomNumber6 = randomNumber(engine);
 
-	std::_String_iterator ticket = std::to_string(randomNumber1) + std::to_string(randomNumber2) + std::to_string(randomNumber3) + std::to_string(randomNumber4) + std::to_string(randomNumber5) + std::to_string(randomNumber6);
+	std::to_string ticket = std::to_string(randomNumber1) + std::to_string(randomNumber2) + std::to_string(randomNumber3) + std::to_string(randomNumber4) + std::to_string(randomNumber5) + std::to_string(randomNumber6);
     std::cout << ticket << std::endl;
     std::cout << "Ticket Number: " << ticketNumber << std::endl;
     return 0;
